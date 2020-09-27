@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Saira Condensed", sans-serif;
+  color: #0f1c2d;
+  /* line-height: 1.6rem; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

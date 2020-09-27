@@ -1,0 +1,65 @@
+.WheelsChoicesItems {
+  position: relative;
+  @media (max-width: 700px) {
+    display: flex;
+    padding: 1.2rem;
+  }
+
+  .wheel-image-container {
+    text-align: center;
+    width: 220px;
+    @media (max-width: 700px) {
+      width: 168px;
+      margin-right: 2rem;
+    }
+    @media (max-width: 500px) {
+      width: 145px;
+      margin-right: 2rem;
+    }
+  }
+
+  .wheel-image {
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  .color-description {
+    position: absolute;
+    bottom: -60;
+    left: 0;
+    right: 0;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1;
+    @media (max-width: 700px) {
+      position: relative;
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+
+  .color-name {
+    font-size: 22px;
+    text-align: center;
+
+    color: $black;
+  }
+
+  .color-price {
+    font-size: 22px;
+    text-align: center;
+
+    color: $red;
+  }
+}
+
+.WheelsChoicesItems.active {
+  .wheel-image {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  .color-description {
+    visibility: visible;
+  }
+}

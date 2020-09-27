@@ -1,0 +1,112 @@
+.Hero {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 700px) {
+    justify-content: space-between;
+  }
+
+  .heading {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    z-index: 1;
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex-grow: 2;
+      position: relative;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .heading div:first-of-type {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 10.84px;
+    padding-left: 9px;
+
+    color: $red;
+    @media (max-width: 700px) {
+      font-size: 20px;
+      letter-spacing: 7.22667px;
+    }
+  }
+
+  .heading div:last-of-type {
+    font-weight: 300;
+    font-size: 100px;
+    letter-spacing: 12.5px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    color: $black;
+    @media (max-width: 700px) {
+      font-size: 90px;
+      letter-spacing: 7.5px;
+      display: flex;
+    }
+  }
+
+  .heading div:last-of-type span {
+    font-weight: 400;
+    font-size: 100px;
+    color: $red;
+    @media (max-width: 700px) {
+      font-size: 90px;
+      letter-spacing: 13.0309px;
+    }
+  }
+
+  .homeModelR {
+    height: 241px;
+    @media (max-width: 700px) {
+      width: 100%;
+      height: inherit;
+      flex-grow: 1;
+    }
+  }
+
+  .homeModelR img {
+    width: 583px;
+    margin-top: 60px;
+    transform: translateY(55px);
+    @media (max-width: 700px) {
+      transform: translateY(0);
+      width: 100%;
+    }
+  }
+
+  .call {
+    background: none;
+    border: none;
+    margin-top: 4rem;
+    z-index: 1;
+    @media (max-width: 700px) {
+      margin-top: 0;
+      z-index: 1;
+      flex-grow: 4;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .call a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 9.42222px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    color: $black;
+  }
+}
