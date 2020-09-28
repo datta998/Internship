@@ -1,5 +1,5 @@
 
-Project Name & Pitch
+Project Name
 
 Heaven Rider Car customisation
 
